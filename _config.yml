@@ -8,10 +8,10 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Pizza Service
-tagline: 'Better quality pizzas for Canadians'
+title : digital.canada.ca
+tagline: 'Coming soon'
 author :
-  name : 'Pizza Service staff'
+  name : 'TBS'
   email : name@example.com
   github : username
   twitter : username
@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : https://sboots.github.io/pizza-service
+production_url : https://sboots.github.io/74181e2edb120a6c00ee62010459328a/
 
 gems: ["jekyll-sitemap"]
 
@@ -38,7 +38,7 @@ GC :
   site_breadcrumbs:
     - label: 'Home'
       url: 'https://www.canada.ca/en.html'
-    - label: 'Pizza Service'
+    - label: 'digital.canada.ca'
       url: 'HOME_PATH'
 
 
