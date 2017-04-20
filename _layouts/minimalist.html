@@ -1,0 +1,11 @@
+---
+theme :
+  name : wet-boew
+---
+{% include JB/setup %}
+
+{% if site.GC.lang == 'fr' %}
+	{% include themes/wet-boew/minimalist-fr.html %}
+{% else %}
+	{% include themes/wet-boew/minimalist-en.html %}
+{% endif %}
