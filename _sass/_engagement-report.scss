@@ -27,7 +27,10 @@ $bg-pei: #1d2f21;
 // 398c89
 // 286260
 // b40859
-$bg-whiteboard: #b40859;
+// 96074a
+// aa0854
+// a1084f
+$bg-whiteboard: #a1084f;
 
 // PEI Confederation bridge
 // 1e150c
@@ -70,19 +73,27 @@ $bg-airport: #702c0f;
 			margin-bottom: 1em;
 			// overflow: hidden;
 		}
-
-		// Fixes for lists next to floating divs
-		// Thanks to:
-		// http://stackoverflow.com/a/11904121/756641
 		ul {
-		    list-style: outside disc;
-		    // margin-left: 1em;
+			list-style: outside disc;
 		}
-		ul li {
-		    position: relative;
-		    left: 1em;
-		    // padding-right: 1em;
+
+		.caption {
+			font-size: 14px;
+			color: #777;
 		}
+
+		// // Fixes for lists next to floating divs
+		// // Thanks to:
+		// // http://stackoverflow.com/a/11904121/756641
+		// ul {
+		//     list-style: outside disc;
+		//     // margin-left: 1em;
+		// }
+		// ul li {
+		//     position: relative;
+		//     left: 1em;
+		//     // padding-right: 1em;
+		// }
 
 		p {
 		    line-height: 1.5;
@@ -153,7 +164,7 @@ $bg-airport: #702c0f;
 			&.sky {
 				background: url(img/v2/horizon-mosaic.png) no-repeat center right / cover $bg-sky;
 				border-color: $bg-sky;
-				padding-top: 150px;
+				// padding-top: 150px;
 
 				border-top: 0;
 				border-bottom: 0;
@@ -268,8 +279,8 @@ $bg-airport: #702c0f;
 			}
 
 			&.montreal {
-				border-color: darken($bg-calgary, 10%);
-				background-color: $bg-calgary;
+				border-color: darken($bg-pei-bridge, 10%);
+				background-color: $bg-pei-bridge;
 			}
 
 			&.ottawa {
@@ -283,8 +294,8 @@ $bg-airport: #702c0f;
 			}
 
 			&.vancouver {
-				border-color: darken($bg-calgary, 10%);
-				background-color: $bg-calgary;
+				border-color: darken($bg-whiteboard, 10%);
+				background-color: $bg-whiteboard;
 			}
 		}
 
@@ -384,13 +395,15 @@ $bg-airport: #702c0f;
 			margin-right: -20rem;
 			max-width: 31rem;
 			margin-left: 20px;
+			margin-top: 5px;
 		}
 
 		.comment-panel-left {
 			float: left;
 			margin-left: -20rem;
 			max-width: 31rem;
-			margin-right: 20px;
+			margin-right: 40px;
+			margin-top: 5px;
 		}
 
 	}
