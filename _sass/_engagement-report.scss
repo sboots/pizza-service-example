@@ -269,8 +269,8 @@ $bg-airport: #702c0f;
 
 
 			&.gds {
-				border-color: darken($bg-calgary, 10%);
-				background-color: $bg-calgary;
+				border-color: darken($bg-gds, 10%);
+				background-color: $bg-gds;
 			}
 
 			&.calgary {
@@ -379,12 +379,25 @@ $bg-airport: #702c0f;
 			}
 		}
 
-
-
 	}
 
 
 }
+
+@media screen and (min-width: 810px) and (max-width: 1029px) {
+
+	.engagement-report {
+
+		.comment-panel {
+
+			margin-left: -6rem;
+			margin-right: -6rem;
+
+		}
+	}
+}
+
+
 
 @media screen and (min-width: 1030px) {
 
