@@ -115,6 +115,9 @@ $bg-airport: #702c0f;
             clear: both;
             border-top: 2px #333 solid;
             border-bottom: 2px #333 solid;
+            .padded-multiline span {
+                padding: 0.6rem;
+            }
             .padded-multiline.title {
                 font-size: 32px;
                 font-weight: bold;
@@ -134,6 +137,9 @@ $bg-airport: #702c0f;
             // Background features
             padding-top: 170px;
             padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            min-height: 250px;
             // Visual designs - individual backgrounds for each heading style
             &.sky {
                 background: url(img/v2/horizon-mosaic.png) no-repeat center right / cover $bg-sky;
