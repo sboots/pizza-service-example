@@ -1,28 +1,21 @@
 // Styles for the "Beginning the Conversation" engagement report
-
 // Variables
-
 // Horizon shot over the Rockies
 $bg-sky: #1d344b;
-
 // GDS border/bg color
 $bg-gds: #151512;
-
 // Hub Ottawa
 // #111112;
-$bg-ottawa: #110b0a; 
-
+$bg-ottawa: #110b0a;
 // Calgary skyline
 // 332a29
 // 272e38
 // 252020
-$bg-calgary: #332a29; 
-
+$bg-calgary: #332a29;
 // PEI startupzone
 // 314f37
 // 1d2f21
 $bg-pei: #1d2f21;
-
 // TBS whiteboard background
 // 398c89
 // 286260
@@ -31,465 +24,331 @@ $bg-pei: #1d2f21;
 // aa0854
 // a1084f
 $bg-whiteboard: #a1084f;
-
 // PEI Confederation bridge
 // 1e150c
 // 212b36
 $bg-pei-bridge: #212b36;
-
 // Saskatoon airport
 // d35c2f
 // 6d2e17
 // 702c0f
 // 883a20
 $bg-airport: #702c0f;
+@media screen and (max-width: 767px) {}
 
-
-@media screen and (max-width: 767px) {
-
-}
-
-@media screen and (min-width: 768px) {
-
-}
+@media screen and (min-width: 768px) {}
 
 @media screen {
-
-	.engagement-report {
-
-		font-size: 18px;
-
-		blockquote {
-			font-size: inherit;
-		}
-
-		li + li {
-			margin-top: 0.75em;
-		}
-		li ul:first-child {
-			margin-top: 0.75em;
-		}
-		ul, ol {
-			margin-bottom: 1em;
-			// overflow: hidden;
-		}
-		ul {
-			list-style: outside disc;
-		}
-
-		.caption {
-			font-size: 14px;
-			color: #676767;
-		}
-
-		// // Fixes for lists next to floating divs
-		// // Thanks to:
-		// // http://stackoverflow.com/a/11904121/756641
-		// ul {
-		//     list-style: outside disc;
-		//     // margin-left: 1em;
-		// }
-		// ul li {
-		//     position: relative;
-		//     left: 1em;
-		//     // padding-right: 1em;
-		// }
-
-		p {
-		    line-height: 1.5;
-		    margin-bottom: 1em;
-		    margin-top: 1em;
-		}
-		p:first-child {
-			margin-top: 0;	
-		}
-
-		// Useful for cases where an h3 is followed by an infobox
-		// Otherwise this doesn't change the margin from the computed default value:
-		h3 {
-			margin-bottom: 0.8em;
-		}
-
-		/* 
+    .engagement-report {
+        font-size: 18px;
+        blockquote {
+            font-size: inherit;
+        }
+        li + li {
+            margin-top: 0.75em;
+        }
+        li ul:first-child {
+            margin-top: 0.75em;
+        }
+        ul,
+        ol {
+            margin-bottom: 1em;
+            // overflow: hidden;
+        }
+        ul {
+            list-style: outside disc;
+        }
+        .caption {
+            font-size: 14px;
+            color: #676767;
+        }
+        // // Fixes for lists next to floating divs
+        // // Thanks to:
+        // // http://stackoverflow.com/a/11904121/756641
+        // ul {
+        //     list-style: outside disc;
+        //     // margin-left: 1em;
+        // }
+        // ul li {
+        //     position: relative;
+        //     left: 1em;
+        //     // padding-right: 1em;
+        // }
+        p {
+            line-height: 1.5;
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+        p:first-child {
+            margin-top: 0;
+        }
+        // Useful for cases where an h3 is followed by an infobox
+        // Otherwise this doesn't change the margin from the computed default value:
+        h3 {
+            margin-bottom: 0.8em;
+        }
+        /* 
 		Multi-line padded text
 		Thanks to:
 		https://css-tricks.com/multi-line-padded-text/
 		*/
-		.padded-multiline { 
-		  line-height: 1.4; 
-		  padding: 2px 0; 
-		  width: 530px;
-		 /* margin: 20px;
+        .padded-multiline {
+            line-height: 1.4;
+            padding: 2px 0;
+            width: 530px;
+            /* margin: 20px;
 		  margin-left: 40px;*/
-		}
-		.padded-multiline span { 
-		  background-color: #3a3a3a;
-		  color: #fff; 
-		  display: inline;
-		  
-		  /* Needs prefixing */
-		  box-decoration-break: clone;
-		}
-
-		.heading-container {
-			width: 100%;
-			
-			margin-top: 32px;
-			margin-bottom: 32px;
-			background-color: #333;
-			color: #fff; 
-			clear: both;
-
-			border-top: 2px #333 solid;
-			border-bottom: 2px #333 solid;
-
-			.padded-multiline.title {
-				font-size: 32px;
-				font-weight: bold;
-				margin: 0 0 11.5px;
-			}
-			.padded-multiline.title span {
-				padding: 0.7rem;
-			}
-
-			.padded-multiline.subtitle {
-				font-size: 22px;
-				margin: 0 0 11.5px;
-				margin-bottom: 1em;
-			}
-			.padded-multiline.subtitle span {
-				padding: 0.7rem;
-			}
-
-			// Background features
-			padding-top: 170px;
-			padding-bottom: 30px;
-
-
-			// Visual designs - individual backgrounds for each heading style
-			&.sky {
-				background: url(img/v2/horizon-mosaic.png) no-repeat center right / cover $bg-sky;
-				border-color: $bg-sky;
-				// padding-top: 150px;
-
-				border-top: 0;
-				border-bottom: 0;
-
-			}
-
-			&.sky .padded-multiline span {
-				background-color: $bg-sky;
-			}
-
-			&.gds {
-				background: url(img/v2/gds-mosaic.png) no-repeat center right / cover $bg-gds;
-				border-color: $bg-gds;
-			}
-
-			&.gds .padded-multiline span {
-				background-color: $bg-gds;
-			}
-
-			&.hub {
-				background: url(img/v2/hub-ottawa-mosaic.png) no-repeat center right / cover $bg-ottawa;
-				border-color: $bg-ottawa;
-			}
-
-			&.hub .padded-multiline span {
-				background-color: $bg-ottawa;
-			}
-
-			&.calgary {
-				background: url(img/v2/calgary-mosaic.png) no-repeat center right / cover $bg-calgary;
-				border-color: $bg-calgary;
-
-			}
-
-			&.calgary .padded-multiline span {
-				background-color: $bg-calgary;
-			}
-
-			&.pei {
-				background: url(img/v2/pei-startupzone-mosaic.png) no-repeat center right / cover $bg-pei;
-				border-color: $bg-pei;
-
-			}
-
-			&.pei .padded-multiline span {
-				background-color: $bg-pei;
-			}
-
-			&.montreal {
-				background: url(img/v2/pei-bridge-2-mosaic.png) no-repeat center right / cover $bg-pei-bridge;
-				border-color: $bg-pei-bridge;
-
-			}
-
-			&.montreal .padded-multiline span {
-				background-color: $bg-pei-bridge;
-			}
-
-			&.vancouver {
-				background: url(img/v2/whiteboard-mosaic-9.png) no-repeat center right / cover $bg-whiteboard;
-				border-color: $bg-whiteboard;
-
-			}
-
-			&.vancouver .padded-multiline span {
-				background-color: $bg-whiteboard;
-			}
-
-			&.ottawa {
-				background: url(img/v2/ottawa-mosaic.png) no-repeat center right / cover $bg-airport;
-				border-color: $bg-airport;
-
-			}
-
-			&.ottawa .padded-multiline span {
-				background-color: $bg-airport;
-			}
-
-
-
-		}
-
-		// Comment panel designs
-		.comment-panel {
-			color: #fff;
-			background-color: #333;
-			border-bottom: 4px solid #1a3346;
-			margin-bottom: 20px;
-			padding: 20px;
-
-			p {
-				margin: 0;
-				font-size: 16px;
-			}
-
-			a {
-				color: #b6cce8;
-			}
-			a:visited {
-				color: #d3bde8;
-			}
-
-
-			&.gds {
-				border-color: darken($bg-gds, 10%);
-				background-color: $bg-gds;
-			}
-
-			&.calgary {
-				border-color: darken($bg-calgary, 10%);
-				background-color: $bg-calgary;
-			}
-
-			&.montreal {
-				border-color: darken($bg-pei-bridge, 10%);
-				background-color: $bg-pei-bridge;
-			}
-
-			&.ottawa {
-				border-color: darken($bg-calgary, 10%);
-				background-color: $bg-calgary;
-			}
-
-			&.pei {
-				border-color: darken($bg-pei, 10%);
-				background-color: $bg-pei;
-			}
-
-			&.vancouver {
-				border-color: darken($bg-whiteboard, 10%);
-				background-color: $bg-whiteboard;
-			}
-		}
-
-
-	}
-
-	
-
+        }
+        .padded-multiline span {
+            background-color: #3a3a3a;
+            color: #fff;
+            display: inline;
+            /* Needs prefixing */
+            box-decoration-break: clone;
+        }
+        .heading-container {
+            width: 100%;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            background-color: #333;
+            color: #fff;
+            clear: both;
+            border-top: 2px #333 solid;
+            border-bottom: 2px #333 solid;
+            .padded-multiline.title {
+                font-size: 32px;
+                font-weight: bold;
+                margin: 0 0 11.5px;
+            }
+            .padded-multiline.title span {
+                padding: 0.7rem;
+            }
+            .padded-multiline.subtitle {
+                font-size: 22px;
+                margin: 0 0 11.5px;
+                margin-bottom: 1em;
+            }
+            .padded-multiline.subtitle span {
+                padding: 0.7rem;
+            }
+            // Background features
+            padding-top: 170px;
+            padding-bottom: 30px;
+            // Visual designs - individual backgrounds for each heading style
+            &.sky {
+                background: url(img/v2/horizon-mosaic.png) no-repeat center right / cover $bg-sky;
+                border-color: $bg-sky;
+                // padding-top: 150px;
+                border-top: 0;
+                border-bottom: 0;
+            }
+            &.sky .padded-multiline span {
+                background-color: $bg-sky;
+            }
+            &.gds {
+                background: url(img/v2/gds-mosaic.png) no-repeat center right / cover $bg-gds;
+                border-color: $bg-gds;
+            }
+            &.gds .padded-multiline span {
+                background-color: $bg-gds;
+            }
+            &.hub {
+                background: url(img/v2/hub-ottawa-mosaic.png) no-repeat center right / cover $bg-ottawa;
+                border-color: $bg-ottawa;
+            }
+            &.hub .padded-multiline span {
+                background-color: $bg-ottawa;
+            }
+            &.calgary {
+                background: url(img/v2/calgary-mosaic.png) no-repeat center right / cover $bg-calgary;
+                border-color: $bg-calgary;
+            }
+            &.calgary .padded-multiline span {
+                background-color: $bg-calgary;
+            }
+            &.pei {
+                background: url(img/v2/pei-startupzone-mosaic.png) no-repeat center right / cover $bg-pei;
+                border-color: $bg-pei;
+            }
+            &.pei .padded-multiline span {
+                background-color: $bg-pei;
+            }
+            &.montreal {
+                background: url(img/v2/pei-bridge-2-mosaic.png) no-repeat center right / cover $bg-pei-bridge;
+                border-color: $bg-pei-bridge;
+            }
+            &.montreal .padded-multiline span {
+                background-color: $bg-pei-bridge;
+            }
+            &.vancouver {
+                background: url(img/v2/whiteboard-mosaic-9.png) no-repeat center right / cover $bg-whiteboard;
+                border-color: $bg-whiteboard;
+            }
+            &.vancouver .padded-multiline span {
+                background-color: $bg-whiteboard;
+            }
+            &.ottawa {
+                background: url(img/v2/ottawa-mosaic.png) no-repeat center right / cover $bg-airport;
+                border-color: $bg-airport;
+            }
+            &.ottawa .padded-multiline span {
+                background-color: $bg-airport;
+            }
+        }
+        // Comment panel designs
+        .comment-panel {
+            color: #fff;
+            background-color: #333;
+            border-bottom: 4px solid #1a3346;
+            margin-bottom: 20px;
+            padding: 20px;
+            p {
+                margin: 0;
+                font-size: 16px;
+            }
+            a {
+                color: #b6cce8;
+            }
+            a:visited {
+                color: #d3bde8;
+            }
+            &.gds {
+                border-color: darken($bg-gds, 10%);
+                background-color: $bg-gds;
+            }
+            &.calgary {
+                border-color: darken($bg-calgary, 10%);
+                background-color: $bg-calgary;
+            }
+            &.montreal {
+                border-color: darken($bg-pei-bridge, 10%);
+                background-color: $bg-pei-bridge;
+            }
+            &.ottawa {
+                border-color: darken($bg-calgary, 10%);
+                background-color: $bg-calgary;
+            }
+            &.pei {
+                border-color: darken($bg-pei, 10%);
+                background-color: $bg-pei;
+            }
+            &.vancouver {
+                border-color: darken($bg-whiteboard, 10%);
+                background-color: $bg-whiteboard;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 500px) {
-
-	.engagement-report {
-
-		.engagement-report-section {
-			margin: 5rem auto;
-		    max-width: 61rem;
-		}
-
-		.heading-container {
-			padding-left: 30px;
-			padding-right: 30px;
-			min-height: 250px;
-
-			h2 {
-				font-size: 30px;
-			}
-
-			.padded-multiline span { 
-				padding: 0.7rem;
-			}
-
-			.padded-multiline.title {
-				font-size: 38px;
-			}
-			.padded-multiline.title span {
-				padding: 0.9rem;
-			}
-
-			.padded-multiline.subtitle {
-				font-size: 30px;
-			}
-			.padded-multiline.subtitle span {
-				padding: 0.9rem;
-			}
-		}
-
-
-
-	}
-
-	
-
+    .engagement-report {
+        .engagement-report-section {
+            margin: 5rem auto;
+            max-width: 61rem;
+        }
+        .heading-container {
+            padding-left: 30px;
+            padding-right: 30px;
+            min-height: 250px;
+            h2 {
+                font-size: 30px;
+            }
+            .padded-multiline span {
+                padding: 0.7rem;
+            }
+            .padded-multiline.title {
+                font-size: 38px;
+            }
+            .padded-multiline.title span {
+                padding: 0.9rem;
+            }
+            .padded-multiline.subtitle {
+                font-size: 30px;
+            }
+            .padded-multiline.subtitle span {
+                padding: 0.9rem;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 650px) {
-
-	.engagement-report {
-
-		// font-size: 18px;
-
-		.heading-container {
-			padding-left: 50px;
-			padding-right: 50px;
-			min-height: 320px;
-
-			h2 {
-				font-size: 40px;
-				
-			}
-
-			.padded-multiline span { 
-				padding: 1rem;
-			}
-
-			.padded-multiline.title {
-				font-size: 46px;
-			}
-			.padded-multiline.subtitle {
-				font-size: 36px;
-			}
-		}
-
-	}
-
-
+    .engagement-report {
+        // font-size: 18px;
+        .heading-container {
+            padding-left: 50px;
+            padding-right: 50px;
+            min-height: 320px;
+            h2 {
+                font-size: 40px;
+            }
+            .padded-multiline span {
+                padding: 1rem;
+            }
+            .padded-multiline.title {
+                font-size: 46px;
+            }
+            .padded-multiline.subtitle {
+                font-size: 36px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 810px) and (max-width: 1029px) {
-
-	.engagement-report {
-
-		.comment-panel {
-
-			margin-left: -6rem;
-			margin-right: -6rem;
-
-		}
-	}
+    .engagement-report {
+        .comment-panel {
+            margin-left: -6rem;
+            margin-right: -6rem;
+        }
+    }
 }
 
-
-
 @media screen and (min-width: 1030px) {
-
-	.engagement-report {
-
-		.comment-panel-right {
-			float: right;
-			margin-right: -20rem;
-			max-width: 31rem;
-			margin-left: 20px;
-			margin-top: 5px;
-		}
-
-		.comment-panel-left {
-			float: left;
-			margin-left: -20rem;
-			max-width: 31rem;
-			margin-right: 40px;
-			margin-top: 5px;
-		}
-
-	}
-
+    .engagement-report {
+        .comment-panel-right {
+            float: right;
+            margin-right: -20rem;
+            max-width: 31rem;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .comment-panel-left {
+            float: left;
+            margin-left: -20rem;
+            max-width: 31rem;
+            margin-right: 40px;
+            margin-top: 5px;
+        }
+    }
 }
 
 @media screen and (min-width: 1210px) {
-
-	.engagement-report {
-
-		.comment-panel-right {
-			margin-right: -22rem;
-		}
-
-		.comment-panel-left {
-			margin-left: -22rem;
-		}
-
-	}
-
+    .engagement-report {
+        .comment-panel-right {
+            margin-right: -22rem;
+        }
+        .comment-panel-left {
+            margin-left: -22rem;
+        }
+    }
 }
 
-
-
-
-
-
-
-
 .report-container ul li {
-	margin-bottom: 0.3em;
+    margin-bottom: 0.3em;
 }
 
 .report-container h2 {
-	clear: both;
-	font-size: 30px;
+    clear: both;
+    font-size: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*Comment sidebars*/
-
-/* Matching extra margins to the medium breakpoint */
-@media (min-width: 992px) {
-	.comment-panel.pull-right {
-		margin-left: 20px;
-	}
-	.comment-panel.pull-left {
-		margin-right: 20px;
-	}
-}
-
-
-
-
 
 
 /* Comments from open.canada.ca */
+
+
 /*http://open.canada.ca/sites/all/modules/custom/opendata_blog/css/images/icons/comment.png*/
+
 .comment .links .comment-reply a {
     background: url(//open.canada.ca/sites/all/modules/custom/opendata_blog/css/images/icons/comment.png) left bottom no-repeat;
 }
@@ -500,26 +359,35 @@ $bg-airport: #702c0f;
     color: #3e7bab;
 }
 
-.comment .comment-author, form.comment-form .username {
+.comment .comment-author,
+form.comment-form .username {
     font-weight: bold;
     color: #086CA2;
 }
 
 
 /* Menu inspired by budget.gc.ca */
-.logo, .nav-link {
+
+.logo,
+.nav-link {
     font-size: 14px;
 }
-.logo, .nav-link, .vertical-align-middle {
+
+.logo,
+.nav-link,
+.vertical-align-middle {
     display: inline-block;
     vertical-align: middle;
 }
-.nav:after, .nav:before {
-  content: none; }
+
+.nav:after,
+.nav:before {
+    content: none;
+}
 
 .nav>li {
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
 }
 
 .nav>li>a {
@@ -527,177 +395,217 @@ $bg-airport: #702c0f;
     display: block;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
+.nav>li>a:focus,
+.nav>li>a:hover {
     text-decoration: none;
     background-color: #333;
     color: #fff;
 }
 
 .engagement-report ul.nav li + li {
-	margin-top: 0;
-
+    margin-top: 0;
 }
 
 .scroll {
-user-select: none;
-white-space: nowrap;
-overflow-x: auto;
-overflow: -moz-scrollbars-none;
--webkit-overflow-scrolling: touch;
--ms-overflow-style: -ms-autohiding-scrollbar; }
+    user-select: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow: -moz-scrollbars-none;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 .scroll.secondary {
-  background-color: #333; }
-.scroll::-webkit-scrollbar, .scroll::-webkit-scrollbar-track {
-  display: none; }
+    background-color: #333;
+}
+
+.scroll::-webkit-scrollbar,
+.scroll::-webkit-scrollbar-track {
+    display: none;
+}
 
 nav::-webkit-scrollbar {
-display: none !important; }
+    display: none !important;
+}
 
 .affix {
-	text-align: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999 !important;
-  -webkit-box-shadow: 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
-  -moz-box-shadow: 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
-  box-shadow: 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
-  background-color: #3d3d3d; }
-  .affix a.active {
-    color: purple !important; }
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    -webkit-box-shadow: 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
+    background-color: #3d3d3d;
+}
+
+.affix a.active {
+    color: purple !important;
+}
 
 @media (max-width: 720px) {
-  .secondary {
-    -webkit-box-shadow: inset 0px 0px 31px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: inset 0px 0px 31px 1px rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0px 0px 31px 1px rgba(0, 0, 0, 0.75); } }
-.secondary.scroll:before, .secondary.scroll:after {
-  top: 90px;
-  height: 75px; }
+    .secondary {
+        -webkit-box-shadow: inset 0px 0px 31px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: inset 0px 0px 31px 1px rgba(0, 0, 0, 0.75);
+        box-shadow: inset 0px 0px 31px 1px rgba(0, 0, 0, 0.75);
+    }
+}
+
+.secondary.scroll:before,
+.secondary.scroll:after {
+    top: 90px;
+    height: 75px;
+}
+
 .secondary li {
-  display: inline-block;
-  padding: 0 1.54%; }
+    display: inline-block;
+    padding: 0 1.54%;
+}
+
 .secondary li.active a {
-  color: white !important; }
-.secondary .nav-link {
-  text-align: center;
-  padding: 15px 2%;
-  text-transform: uppercase;
-  transition: color 0.2s;
-  transition-timing-function: ease; }
-  @media (min-width: 1200px) {
-    .secondary .nav-link {
-      padding-left: 4%;
-      padding-right: 4%; } }
-  .secondary .nav-link:hover {
     color: white !important;
-    background-color: transparent; }
+}
+
+.secondary .nav-link {
+    text-align: center;
+    padding: 15px 2%;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    transition-timing-function: ease;
+}
+
+@media (min-width: 1200px) {
+    .secondary .nav-link {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+.secondary .nav-link:hover {
+    color: white !important;
+    background-color: transparent;
+}
+
 
 /**
  *  Shouldn't be using !important, but specificity isn't working
  **/
+
 .yellow,
 .yellow:visited {
-  color: #ffcc33 !important; }
+    color: #ffcc33 !important;
+}
 
 .peach,
 .peach:visited {
-  color: #fc9968 !important; }
+    color: #fc9968 !important;
+}
 
 .blue,
 .blue:visited {
-  color: #09bdbd !important; }
+    color: #09bdbd !important;
+}
 
 .green,
 .green:visited {
-  color: #819637 !important; }
+    color: #819637 !important;
+}
 
 .affix .yellow,
 .affix .peach,
 .affix .blue,
 .affix .green {
-  color: white !important; }
-.affix .active .yellow {
-  color: #ffcc33 !important; }
-.affix .active .peach {
-  color: #fc9968 !important; }
-.affix .active .blue {
-  color: #09bdbd !important; }
-.affix .active .green {
-  color: #819637 !important; }
+    color: white !important;
+}
 
+.affix .active .yellow {
+    color: #ffcc33 !important;
+}
+
+.affix .active .peach {
+    color: #fc9968 !important;
+}
+
+.affix .active .blue {
+    color: #09bdbd !important;
+}
+
+.affix .active .green {
+    color: #819637 !important;
+}
 
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-@media print {
-  *,
-  *:before,
-  *:after {
-    color: #000 !important;
-    text-shadow: none !important;
-    background: transparent !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
 
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-  .navbar {
-    display: none;
-  }
-  .btn > .caret,
-  .dropup > .btn > .caret {
-    border-top-color: #000 !important;
-  }
-  .label {
-    border: 1px solid #000;
-  }
-  .table {
-    border-collapse: collapse !important;
-  }
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #ddd !important;
-  }
+@media print {
+    *,
+    *:before,
+    *:after {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: transparent !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    .navbar {
+        display: none;
+    }
+    .btn > .caret,
+    .dropup > .btn > .caret {
+        border-top-color: #000 !important;
+    }
+    .label {
+        border: 1px solid #000;
+    }
+    .table {
+        border-collapse: collapse !important;
+    }
+    .table td,
+    .table th {
+        background-color: #fff !important;
+    }
+    .table-bordered th,
+    .table-bordered td {
+        border: 1px solid #ddd !important;
+    }
 }
