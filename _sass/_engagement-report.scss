@@ -104,6 +104,12 @@ $bg-airport: #702c0f;
 			margin-top: 0;	
 		}
 
+		// Useful for cases where an h3 is followed by an infobox
+		// Otherwise this doesn't change the margin from the computed default value:
+		h3 {
+			margin-bottom: 0.8em;
+		}
+
 		/* 
 		Multi-line padded text
 		Thanks to:
