@@ -161,7 +161,7 @@
 			</div>
 		</nav> -->
 	</header>
-	<main role="main" property="mainContentOfPage" class="container">
+	<main role="main" property="mainContentOfPage" class="container" id="wb-cont">
 		<!-- <h1 property="name" id="wb-cont">{{ page.title }}</h1>  -->
 		{{ content }}
 	</main>
@@ -219,7 +219,8 @@
 	
 	<!-- Bootstrap Scrollspy Plugin -->
 	<!-- https://gist.github.com/cf23e89dea6b460358436dec372eafb2 -->
-	<script src="http://www.budget.gc.ca/2017/js/bootstrap.js"></script>
+	<!-- With thanks to http://www.budget.gc.ca/2017/js/bootstrap.js -->
+	<script src="{{ ASSET_PATH }}/bootstrap-affix-scrollspy.js"></script>
 
 </body>
 
