@@ -135,25 +135,30 @@
 			<div class="container">
 				<div class="row">
 					<ol class="breadcrumb">
-						{% for page in site.GC.site_breadcrumbs %}
+						{% for pageItem in site.GC.site_breadcrumbs %}
 						<li>
-							{% if page.url == "BASE_PATH" %}
-							<a href="{{ BASE_PATH }}">{{ page.label }}</a>
-							{% elsif page.url == "HOME_PATH" %}
-							<a href="{{ HOME_PATH }}">{{ page.label }}</a>
+							{% if pageItem.url == "HOME_PATH" %}
+								{% if page.url == '/' %}
+									{{ pageItem.label }}
+								{% else %}
+									<a href="{{ HOME_PATH }}">{{ pageItem.label }}</a>
+								{% endif %}
+							
 							{% else %}
-							<a href="{{ page.url }}">{{ page.label }}</a>
+							<a href="{{ pageItem.url }}">{{ pageItem.label }}</a>
 							{% endif %}
 						</li>
 						{% endfor %}
 
-						{% for page in page.breadcrumbs %}
+						{% for pageItem in page.breadcrumbs %}
 						<li>
-							<a href="{{ page.url }}">{{ page.label }}</a>
+							<a href="{{ pageItem.url }}">{{ pageItem.label }}</a>
 						</li>
 						{% endfor %}
 
+						{% if page.url != '/' %}
 						<li>{{ page.title }}</li>
+						{% endif %}
 					</ol>
 				</div>
 			</div>
