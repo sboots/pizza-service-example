@@ -255,6 +255,12 @@ $bg-airport: #702c0f;
             }
         }
     }
+
+    .summary-heading-background {
+    	min-height: 200px;
+    	background: url(img/v2/horizon-mosaic.png) no-repeat center right / cover $bg-sky;
+    	border-color: $bg-sky;
+    }
 }
 
 @media screen and (min-width: 500px) {
