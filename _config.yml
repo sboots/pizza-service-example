@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : https://sboots.github.io/74181e2edb120a6c00ee62010459328a/
+production_url : https://sboots.github.io/74181e2edb120a6c00ee62010459328a
 
 gems: ["jekyll-sitemap"]
 
