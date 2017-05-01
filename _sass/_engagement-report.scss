@@ -125,7 +125,7 @@ $bg-airport: #702c0f;
             border-top: 2px #333 solid;
             border-bottom: 2px #333 solid;
             .padded-multiline span {
-                padding: 0.6rem;
+                padding: 0.25em;
             }
             .padded-multiline.title {
                 font-size: 32px;
@@ -296,9 +296,9 @@ $bg-airport: #702c0f;
             h2 {
                 font-size: 30px;
             }
-            .padded-multiline span {
-                padding: 0.7rem;
-            }
+            // .padded-multiline span {
+            //     padding: 0.25em;
+            // }
             .padded-multiline.title {
                 font-size: 38px;
             }
@@ -310,6 +310,13 @@ $bg-airport: #702c0f;
             }
             .padded-multiline.subtitle span {
                 padding: 0.9rem;
+            }
+        }
+
+        .heading-container.mini-heading-container {
+            .padded-multiline {
+                font-size: 24px;
+                line-height: 1.45;
             }
         }
     }
@@ -325,9 +332,9 @@ $bg-airport: #702c0f;
             h2 {
                 font-size: 40px;
             }
-            .padded-multiline span {
-                padding: 1rem;
-            }
+            // .padded-multiline span {
+            //     padding: 0.25em;
+            // }
             .padded-multiline.title {
                 font-size: 46px;
             }
@@ -338,11 +345,49 @@ $bg-airport: #702c0f;
     }
 }
 
+// Bootstrap sm breakpoint
+@media screen and (min-width: 768px) {
+    .engagement-report {
+        .heading-container.mini-heading-container {
+            min-height: 200px;
+        }
+    }
+}
+
 @media screen and (min-width: 810px) and (max-width: 1029px) {
     .engagement-report {
         .comment-panel {
             margin-left: -6rem;
             margin-right: -6rem;
+        }
+    }
+}
+
+// Bootstrap md breakpoint
+@media screen and (min-width: 992px) {
+    .engagement-report {
+        .heading-container.mini-heading-container {
+            min-height: 220px;
+            padding-left: 20px;
+            .padded-multiline {
+                font-size: 28px;
+                line-height: 1.45;
+            }
+        }
+    }
+}
+
+// Bootstrap lg breakpoint
+@media screen and (min-width: 1200px) {
+    // These split to 4 across, so we need to go back to smaller text:
+    .engagement-report {
+        .heading-container.mini-heading-container {
+            min-height: 190px;
+            padding-left: 10px;
+            .padded-multiline {
+                font-size: 21px;
+                line-height: 1.4;
+            }
         }
     }
 }
