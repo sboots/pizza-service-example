@@ -281,6 +281,37 @@ $bg-airport: #702c0f;
     	background: url(img/v2/horizon-mosaic.png) no-repeat center right / cover $bg-sky;
     	border-color: $bg-sky;
     }
+
+    .homepage-feature {
+        font-size: 18px;
+
+        &.report {
+            background-color: $bg-sky; 
+            color: #fff;
+
+            .homepage-feature-image {
+
+                display: block;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                min-height: 250px;
+
+                background: url(img/v2/whiteboard-mosaic-9.png) no-repeat center right / cover $bg-sky;
+
+            }
+        }
+
+        &.signup {
+            background-color: #286260; 
+            color: #fff; 
+            margin-top: 1em; 
+            margin-bottom: 2em;
+        }
+
+        .homepage-feature-text {
+            padding: 2em 1.5em;
+        }
+    }
 }
 
 @media screen and (min-width: 500px) {
