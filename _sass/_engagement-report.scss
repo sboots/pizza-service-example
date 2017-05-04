@@ -39,17 +39,13 @@ $bg-airport: #702c0f;
 @media screen and (min-width: 768px) {}
 
 @media (max-width: 1200px) {
-
     // main.container {
     //     padding: 0 !important;
     //     width: 100% !important;
     // }
-
 }
 
-
 @media screen {
-
     .engagement-report {
         font-size: 18px;
         blockquote {
@@ -98,14 +94,12 @@ $bg-airport: #702c0f;
         h3 {
             margin-bottom: 0.8em;
         }
-        
-
         .section-heading-container {
-        	// To make room for the overlay top bar
-        	padding-top: 36px;
+            // To make room for the overlay top bar
+            padding-top: 36px;
         }
         .section-heading-container:focus {
-        	outline: none;
+            outline: none;
         }
         .heading-container {
             // width: 100%;
@@ -113,20 +107,16 @@ $bg-airport: #702c0f;
             margin-bottom: 32px;
             background-color: #333;
             display: block;
-
             text-decoration: none;
             color: #fff;
             clear: both;
             border-top: 2px #333 solid;
             border-bottom: 2px #333 solid;
-
             margin-left: -15px;
             margin-right: -15px;
-
             h2 {
                 font-size: 23px;
             }
-
             /* 
             Multi-line padded text
             Thanks to:
@@ -137,10 +127,8 @@ $bg-airport: #702c0f;
                 padding: 2px 0;
                 width: 100%;
             }
-
             .padded-multiline span {
                 padding: 0.25em;
-
                 background-color: #3a3a3a;
                 color: #fff;
                 display: inline;
@@ -233,8 +221,6 @@ $bg-airport: #702c0f;
                 background-color: $bg-airport;
             }
         }
-
-
         // Mini version of the heading container, for use on the summary page.
         // Shared class with heading-container
         .heading-container.mini-heading-container {
@@ -244,13 +230,11 @@ $bg-airport: #702c0f;
             padding-top: 80px;
             margin-top: 0;
             padding-bottom: 40px;
-
             .padded-multiline {
                 font-size: 20px;
                 font-weight: bold;
             }
         }
-
         // Comment panel designs
         .comment-panel {
             color: #fff;
@@ -294,94 +278,72 @@ $bg-airport: #702c0f;
             }
         }
     }
-
     .summary-heading-background {
-    	min-height: 200px;
-    	background: url(img/v2/horizon-mosaic.png) no-repeat center right / cover $bg-sky;
-    	border-color: $bg-sky;
+        min-height: 200px;
+        background: url(img/v2/horizon-mosaic.png) no-repeat center right / cover $bg-sky;
+        border-color: $bg-sky;
     }
-
     .homepage-feature {
         font-size: 18px;
-
         &.report {
-            background-color: $bg-sky; 
+            background-color: $bg-sky;
             color: #fff;
-
             .homepage-feature-image {
-
                 display: block;
                 margin-top: 15px;
                 margin-bottom: 15px;
                 min-height: 250px;
-
                 background: url(img/v2/whiteboard-mosaic-9.png) no-repeat center right / cover $bg-sky;
-
             }
         }
-
         &.signup {
-            background-color: #286260; 
-            color: #fff; 
-            margin-top: 1em; 
+            background-color: #286260;
+            color: #fff;
+            margin-top: 1em;
             margin-bottom: 2em;
         }
-
         .homepage-feature-text {
             padding: 2em 1.5em;
         }
     }
-
-
     /* Menu inspired by budget.gc.ca */
-
     #themenav {
-
         min-height: 70px;
-
         .nav-link {
             font-size: 14px;
         }
-
         .nav-link,
         .vertical-align-middle {
             display: inline-block;
             vertical-align: middle;
         }
-
         .nav:after,
         .nav:before {
             content: none;
         }
-
-        .nav>li, .nav>li>a {
+        .nav>li,
+        .nav>li>a {
             position: relative;
             display: block;
         }
-
         .nav>li>a:focus,
         .nav>li>a:hover {
             text-decoration: none;
             background-color: inherit;
         }
-
         .nav>li>a:hover {
             // color: #dedede;
             background-color: inherit;
         }
-
-        .nav>li>a, .nav>li>a:active, .nav>li>a:visited {
+        .nav>li>a,
+        .nav>li>a:active,
+        .nav>li>a:visited {
             color: inherit;
         }
-
         nav::-webkit-scrollbar {
             display: none !important;
         }
-
-        .affix-top {
-
-        }
-
+        .affix-top {}
         .affix {
             // text-align: center;
             top: 0;
@@ -392,9 +354,10 @@ $bg-airport: #702c0f;
             -moz-box-shadow: 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
             box-shadow: 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
             background-color: #3d3d3d;
-
-            .nav-link:hover, .nav-link:focus, .nav-link:active, li.active .nav-link {
-
+            .nav-link:hover,
+            .nav-link:focus,
+            .nav-link:active,
+            li.active .nav-link {
                 &.gds {
                     background-color: $bg-gds;
                 }
@@ -413,11 +376,8 @@ $bg-airport: #702c0f;
                 &.ottawa {
                     background-color: $bg-airport;
                 }
-
             }
-
         }
-
         .scroll {
             user-select: none;
             white-space: nowrap;
@@ -425,33 +385,26 @@ $bg-airport: #702c0f;
             overflow: -moz-scrollbars-none;
             -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
-
             &.secondary {
                 background-color: $bg-sky;
                 color: #fff;
                 text-align: center;
-
                 a {
                     color: #fff;
                 }
-
                 &.affix {
                     background-color: #333;
                 }
-
                 li {
                     display: inline-block;
                 }
-
                 li a {
                     display: inline-block;
                     // padding: 0 1.54%;
                 }
-
                 li.active a {
                     // color: #dedede !important;
                 }
-
                 .nav-link {
                     text-align: center;
                     padding: 15px 15px;
@@ -460,104 +413,40 @@ $bg-airport: #702c0f;
                     transition: background-color 0.2s;
                     transition-timing-function: ease;
                 }
-
                 .nav-link:hover {
                     // color: #dedede !important;
                     // background-color: transparent;
                 }
             }
-
         }
-
         .scroll::-webkit-scrollbar,
         .scroll::-webkit-scrollbar-track {
             display: none;
         }
-
     }
-
     // Specific overrides
     .engagement-report ul.nav li + li {
         margin-top: 0;
     }
-
-    
-
-
-    /**
-     *  Shouldn't be using !important, but specificity isn't working
-     **/
-
-    .yellow,
-    .yellow:visited {
-        color: #ffcc33 !important;
-    }
-
-    .peach,
-    .peach:visited {
-        color: #fc9968 !important;
-    }
-
-    .blue,
-    .blue:visited {
-        color: #09bdbd !important;
-    }
-
-    .green,
-    .green:visited {
-        color: #819637 !important;
-    }
-
-    .affix .yellow,
-    .affix .peach,
-    .affix .blue,
-    .affix .green {
-        color: white !important;
-    }
-
-    .affix .active .yellow {
-        color: #ffcc33 !important;
-    }
-
-    .affix .active .peach {
-        color: #fc9968 !important;
-    }
-
-    .affix .active .blue {
-        color: #09bdbd !important;
-    }
-
-    .affix .active .green {
-        color: #819637 !important;
-    }
-
-
 }
 
 // TODO move these
 @media (max-width: 767px) {
-
     #themenav {
         margin-left: -15px;
         margin-right: -15px;
-
         .secondary {
             -webkit-box-shadow: inset 0px 0px 31px 1px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: inset 0px 0px 31px 1px rgba(0, 0, 0, 0.75);
             box-shadow: inset 0px 0px 31px 1px rgba(0, 0, 0, 0.75);
         }
-
         .secondary.scroll:before,
         .secondary.scroll:after {
             top: 90px;
             height: 75px;
         }
     }
-
-
 }
-
-
 
 @media (min-width: 1200px) {
     #themenav {
@@ -567,9 +456,6 @@ $bg-airport: #702c0f;
         }
     }
 }
-
-
-
 
 @media screen and (min-width: 500px) {
     .engagement-report {
@@ -600,7 +486,6 @@ $bg-airport: #702c0f;
                 padding: 0.9rem;
             }
         }
-
         .heading-container.mini-heading-container {
             .padded-multiline {
                 font-size: 24px;
@@ -639,7 +524,6 @@ $bg-airport: #702c0f;
         .heading-container.mini-heading-container {
             min-height: 200px;
         }
-
         .heading-container {
             margin-left: 0;
             margin-right: 0;
@@ -723,7 +607,8 @@ a img.thumbnail:hover {
     box-shadow: inherit;
 }
 
-a:hover img.thumbnail, a:focus img.thumbnail {
+a:hover img.thumbnail,
+a:focus img.thumbnail {
     -webkit-box-shadow: 1px 1px 5px #999;
     box-shadow: 1px 1px 5px #999;
 }
@@ -732,11 +617,10 @@ a:hover img.thumbnail, a:focus img.thumbnail {
     text-decoration: none;
 }
 
-a.gc-dwnld-lnk:hover .gc-dwnld .gc-dwnld-txt, a.gc-dwnld-lnk:focus .gc-dwnld .gc-dwnld-txt {
+a.gc-dwnld-lnk:hover .gc-dwnld .gc-dwnld-txt,
+a.gc-dwnld-lnk:focus .gc-dwnld .gc-dwnld-txt {
     text-decoration: underline;
 }
-
-
 
 
 /* Comments from open.canada.ca */
@@ -759,7 +643,6 @@ form.comment-form .username {
     font-weight: bold;
     color: #086CA2;
 }
-
 
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
