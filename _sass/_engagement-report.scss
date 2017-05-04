@@ -462,6 +462,28 @@ $bg-airport: #702c0f;
     font-size: 30px;
 }
 
+/* Generic domain-wide fixes to GCweb CSS */
+
+a img.thumbnail:hover {
+    -webkit-box-shadow: inherit;
+    box-shadow: inherit;
+}
+
+a:hover img.thumbnail, a:focus img.thumbnail {
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+
+.gc-dwnld .gc-dwnld-txt {
+    text-decoration: none;
+}
+
+a.gc-dwnld-lnk:hover .gc-dwnld .gc-dwnld-txt, a.gc-dwnld-lnk:focus .gc-dwnld .gc-dwnld-txt {
+    text-decoration: underline;
+}
+
+
+
 
 /* Comments from open.canada.ca */
 
