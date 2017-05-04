@@ -107,6 +107,7 @@ $bg-airport: #702c0f;
             margin-bottom: 32px;
             background-color: #333;
             display: block;
+            position: relative;
             text-decoration: none;
             color: #fff;
             clear: both;
@@ -125,7 +126,9 @@ $bg-airport: #702c0f;
             .padded-multiline {
                 line-height: 1.4;
                 padding: 2px 0;
-                width: 100%;
+                width: 90%;
+                bottom: 20px;
+                position: absolute;
             }
             .padded-multiline span {
                 padding: 0.25em;
@@ -139,6 +142,7 @@ $bg-airport: #702c0f;
                 font-weight: bold;
                 margin: 0 0 11.5px;
                 border-bottom: none;
+                position: static;
             }
             .padded-multiline.title span {
                 padding: 0.7rem;
@@ -147,16 +151,26 @@ $bg-airport: #702c0f;
                 font-size: 20px;
                 margin: 0 0 11.5px;
                 margin-bottom: 1em;
+                position: static;
             }
             .padded-multiline.subtitle span {
                 padding: 0.7rem;
             }
             // Background features
-            padding-top: 170px;
-            padding-bottom: 30px;
+            // padding-top: 20px;
+            // padding-bottom: 20px;
             padding-left: 20px;
             padding-right: 20px;
-            min-height: 250px;
+
+            // Min-height for the smallest (mobile size)
+            min-height: 280px;
+
+            // For the title, use the traditional layout approach
+            &.heading-container-large {
+                padding-top: 170px;
+                padding-bottom: 30px;
+            }
+
             // Visual designs - individual backgrounds for each heading style
             &.sky {
                 background: url(img/v2/horizon-mosaic.png) no-repeat center right / cover $bg-sky;
@@ -233,7 +247,14 @@ $bg-airport: #702c0f;
             .padded-multiline {
                 font-size: 20px;
                 font-weight: bold;
+                bottom: 10px;
             }
+        }
+        a.heading-container.mini-heading-container:hover, a.heading-container.mini-heading-container:focus {
+            // opacity: 0.92;
+            // Thanks to:
+            // http://stackoverflow.com/a/26073962/756641
+            box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.08);
         }
         // Comment panel designs
         .comment-panel {
@@ -466,7 +487,7 @@ $bg-airport: #702c0f;
         .heading-container {
             padding-left: 30px;
             padding-right: 30px;
-            min-height: 250px;
+            min-height: 320px;
             h2 {
                 font-size: 30px;
             }
@@ -501,7 +522,7 @@ $bg-airport: #702c0f;
         .heading-container {
             padding-left: 50px;
             padding-right: 50px;
-            min-height: 320px;
+            min-height: 380px;
             h2 {
                 font-size: 40px;
             }
@@ -523,10 +544,14 @@ $bg-airport: #702c0f;
     .engagement-report {
         .heading-container.mini-heading-container {
             min-height: 200px;
+            padded-multiline {
+
+            }
         }
         .heading-container {
             margin-left: 0;
             margin-right: 0;
+            min-height: 380px;
         }
     }
 }
@@ -549,6 +574,14 @@ $bg-airport: #702c0f;
             .padded-multiline {
                 font-size: 28px;
                 line-height: 1.45;
+                bottom: 20px;
+            }
+        }
+        .heading-container { 
+            min-height: 420px;
+
+            .padded-multiline {
+                bottom: 40px;
             }
         }
     }
@@ -564,8 +597,25 @@ $bg-airport: #702c0f;
             .padded-multiline {
                 font-size: 21px;
                 line-height: 1.4;
+                bottom: 10px;
             }
         }
+        .heading-container { 
+            min-height: 460px;
+
+            &.heading-container-large {
+                padding-top: 230px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+    // Expanded version here:
+    #themenav .scroll.secondary .nav-link {
+        padding: 20px 20px;
+        font-size: 16px;
+        padding-bottom: 17px;
+        line-height: 20px;
+        letter-spacing: 0.07em;
     }
 }
 
