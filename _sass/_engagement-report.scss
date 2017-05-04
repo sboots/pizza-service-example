@@ -165,6 +165,22 @@ $bg-airport: #702c0f;
             // Min-height for the smallest (mobile size)
             min-height: 280px;
 
+            .toplink {
+                top: 20px;
+                right: 20px;
+                position: absolute;
+                display: block;
+                padding: 10px;
+                background-color: #333;
+                color: white;
+                text-decoration: none;
+            }
+            .toplink:hover, .toplink:focus {
+                span.toplinktext {
+                    text-decoration: underline;
+                }
+            }
+
             // For the title, use the traditional layout approach
             &.heading-container-large {
                 padding-top: 170px;
@@ -181,58 +197,66 @@ $bg-airport: #702c0f;
                 margin-top: 32px;
                 // No bottom margin, with the new affix menu
                 margin-bottom: 0;
-            }
-            &.sky .padded-multiline span {
-                background-color: $bg-sky;
+
+                .padded-multiline span, .toplink {
+                    background-color: $bg-sky;
+                }
             }
             &.gds {
                 background: url(img/v2/gds-mosaic.png) no-repeat center right / cover $bg-gds;
                 border-color: $bg-gds;
-            }
-            &.gds .padded-multiline span {
-                background-color: $bg-gds;
+
+                .padded-multiline span, .toplink {
+                    background-color: $bg-gds;
+                }
             }
             &.hub {
                 background: url(img/v2/hub-ottawa-mosaic.png) no-repeat center right / cover $bg-ottawa;
                 border-color: $bg-ottawa;
-            }
-            &.hub .padded-multiline span {
-                background-color: $bg-ottawa;
+
+                .padded-multiline span, .toplink {
+                    background-color: $bg-ottawa;
+                }
             }
             &.calgary {
                 background: url(img/v2/calgary-mosaic.png) no-repeat center right / cover $bg-calgary;
                 border-color: $bg-calgary;
-            }
-            &.calgary .padded-multiline span {
-                background-color: $bg-calgary;
+
+                .padded-multiline span, .toplink {
+                    background-color: $bg-calgary;
+                }
             }
             &.pei {
                 background: url(img/v2/pei-startupzone-mosaic.png) no-repeat center right / cover $bg-pei;
                 border-color: $bg-pei;
-            }
-            &.pei .padded-multiline span {
-                background-color: $bg-pei;
+
+                .padded-multiline span, .toplink {
+                    background-color: $bg-pei;
+                }
             }
             &.montreal {
                 background: url(img/v2/pei-bridge-2-mosaic.png) no-repeat center right / cover $bg-pei-bridge;
                 border-color: $bg-pei-bridge;
-            }
-            &.montreal .padded-multiline span {
-                background-color: $bg-pei-bridge;
+
+                .padded-multiline span, .toplink {
+                    background-color: $bg-pei-bridge;
+                }
             }
             &.vancouver {
                 background: url(img/v2/whiteboard-mosaic-9.png) no-repeat center right / cover $bg-whiteboard;
                 border-color: $bg-whiteboard;
-            }
-            &.vancouver .padded-multiline span {
-                background-color: $bg-whiteboard;
+
+                .padded-multiline span, .toplink {
+                    background-color: $bg-whiteboard;
+                }
             }
             &.ottawa {
                 background: url(img/v2/ottawa-mosaic.png) no-repeat center right / cover $bg-airport;
                 border-color: $bg-airport;
-            }
-            &.ottawa .padded-multiline span {
-                background-color: $bg-airport;
+
+                .padded-multiline span, .toplink {
+                    background-color: $bg-airport;
+                }
             }
         }
         // Mini version of the heading container, for use on the summary page.
