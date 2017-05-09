@@ -6,7 +6,7 @@ permalink: 'beginning-the-conversation/full-report'
 {% include JB/setup %}
 
 
-<div class="engagement-report mosaic">
+<div class="engagement-report" id="js-report-section">
 	<!--
 		Front Cover Banner 
 	-->
@@ -117,3 +117,45 @@ permalink: 'beginning-the-conversation/full-report'
 		<p>&nbsp;</p> -->
 	</div>
 </div>
+
+<div id="selectUI">
+	<div class="ui-button js-active" id="opt1">Option 1</div>
+	<div class="ui-button" id="opt2">Option 2</div>
+	<div class="ui-button" id="opt3">Option 3</div>
+</div>
+
+<script>
+	var opt1 = document.getElementById("opt1");
+	var opt2 = document.getElementById("opt2");
+	var opt3 = document.getElementById("opt3");
+
+	var wrapper = document.getElementById("js-report-section");
+
+	function uiClicked(evt) { 
+		if(evt.target.id == "opt1") {
+			wrapper.classList.remove("mosaic");
+			wrapper.classList.remove("simple");
+			opt1.classList.add("js-active");
+			opt2.classList.remove("js-active");
+			opt3.classList.remove("js-active");
+		}
+		if(evt.target.id == "opt2") {
+			wrapper.classList.remove("mosaic");
+			wrapper.classList.add("simple");
+			opt1.classList.remove("js-active");
+			opt2.classList.add("js-active");
+			opt3.classList.remove("js-active");
+		}
+		if(evt.target.id == "opt3") {
+			wrapper.classList.add("mosaic");
+			wrapper.classList.remove("simple");
+			opt1.classList.remove("js-active");
+			opt2.classList.remove("js-active");
+			opt3.classList.add("js-active");
+		}
+	}
+
+	opt1.addEventListener("click", uiClicked, false);
+	opt2.addEventListener("click", uiClicked, false);
+	opt3.addEventListener("click", uiClicked, false);
+</script>

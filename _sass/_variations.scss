@@ -1,11 +1,17 @@
+
+// Easing for test
+* {
+    transition: all 0.5s ease;
+}
+
 .mosaic {
     // Colours
-    $engagement-color   : #F00;
-    $organizing-color   : $primary-color;
-    $talent-color       : $primary-color;
-    $design-color       : $primary-color;
-    $foundations-color  : $primary-color;
-    $yourthoughts-color : $primary-color;
+    $engagement-color   : #110b0a;
+    $organizing-color   : #332a29;
+    $talent-color       : #1d2f21;
+    $design-color       : #a1084f;
+    $foundations-color  : #151512;
+    $yourthoughts-color : #702c0f;
 
     .heading-container {
 
@@ -19,7 +25,7 @@
         }
 
         &.section--engagement { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $engagement-color !important;
+            background: url("img/v2/hub-ottawa-mosaic.png") no-repeat center right / cover $engagement-color !important;
             border-color: $engagement-color !important;
 
             .padded-multiline span, .toplink { 
@@ -27,7 +33,7 @@
             }
         }
         &.section--organizing { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $organizing-color !important;
+            background: url("img/v2/calgary-mosaic.png") no-repeat center right / cover $organizing-color !important;
             border-color: $organizing-color !important;
 
             .padded-multiline span, .toplink { 
@@ -35,7 +41,7 @@
             }
          }
         &.section--talent { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $talent-color !important;
+            background: url("img/v2/pei-startupzone-mosaic.png") no-repeat center right / cover $talent-color !important;
             border-color: $talent-color !important;
 
             .padded-multiline span, .toplink { 
@@ -43,14 +49,14 @@
             }
          }
         &.section--design { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $design-color !important;
+            background: url("img/v2/whiteboard-mosaic-9.png") no-repeat center right / cover $design-color !important;
             border-color: $design-color !important;
 
             .padded-multiline span, .toplink { 
                 background-color: rgba($design-color, 0.9) !important; 
             } }
         &.section--foundations { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $foundations-color !important;
+            background: url("img/v2/gds-mosaic.png") no-repeat center right / cover $foundations-color !important;
             border-color: $foundations-color !important;
 
             .padded-multiline span, .toplink { 
@@ -59,7 +65,7 @@
          }
         
         &.section--yourthoughts { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $yourthoughts-color !important;
+            background: url("img/v2/ottawa-mosaic.png") no-repeat center right / cover $yourthoughts-color !important;
             border-color: $yourthoughts-color !important;
 
             .padded-multiline span, .toplink { 
@@ -85,23 +91,20 @@
     }
 
 }
-
 .simple {
 
-    
     // Colours
-    $engagement-color   : #0F0;
-    $organizing-color   : $primary-color;
-    $talent-color       : $primary-color;
-    $design-color       : $primary-color;
-    $foundations-color  : $primary-color;
-    $yourthoughts-color : $primary-color;
+    $engagement-color   : #BF1C2B;
+    $organizing-color   : #914D0B;
+    $talent-color       : #054C80;
+    $design-color       : #265812;
+    $foundations-color  : #800042;
+    $yourthoughts-color : #111111;
 
      .heading-container {
 
         &.cover { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $primary-color !important;
-            border-color: $primary-color !important;
+            background: url("img/v2/op3-cover.png") no-repeat center right / cover $primary-color !important;
 
             .padded-multiline span, .toplink { 
                 background-color: rgba($primary-color, 0.9) !important; 
@@ -109,51 +112,57 @@
         }
 
         &.section--engagement { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $engagement-color !important;
+            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($engagement-color, 30%) !important;
             border-color: $engagement-color !important;
+            background-blend-mode: multiply;
 
             .padded-multiline span, .toplink { 
-                background-color: rgba($engagement-color, 0.9) !important; 
+                background-color: darken(rgba($engagement-color, 0.9), 20%) !important; 
             }
         }
         &.section--organizing { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $organizing-color !important;
+            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($organizing-color, 30%) !important;
             border-color: $organizing-color !important;
+            background-blend-mode: multiply;
 
             .padded-multiline span, .toplink { 
-                background-color: rgba($organizing-color, 0.9) !important; 
+                background-color: darken(rgba($organizing-color, 0.9), 10%) !important; 
             }
          }
         &.section--talent { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $talent-color !important;
+            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($talent-color, 30%) !important;
             border-color: $talent-color !important;
+            background-blend-mode: multiply;
 
             .padded-multiline span, .toplink { 
-                background-color: rgba($talent-color, 0.9) !important; 
+                background-color: darken(rgba($talent-color, 0.9), 10%) !important; 
             }
          }
         &.section--design { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $design-color !important;
+            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($design-color, 30%) !important;
             border-color: $design-color !important;
+            background-blend-mode: multiply;
 
             .padded-multiline span, .toplink { 
-                background-color: rgba($design-color, 0.9) !important; 
+                background-color: darken(rgba($design-color, 0.9), 10%) !important; 
             } }
         &.section--foundations { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $foundations-color !important;
+            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($foundations-color, 30%) !important;
             border-color: $foundations-color !important;
+            background-blend-mode: multiply;
 
             .padded-multiline span, .toplink { 
-                background-color: rgba($foundations-color, 0.9) !important; 
+                background-color: darken(rgba($foundations-color, 0.9), 10%) !important; 
             }
          }
         
         &.section--yourthoughts { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $yourthoughts-color !important;
+            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($yourthoughts-color, 30%) !important;
             border-color: $yourthoughts-color !important;
+            background-blend-mode: multiply;
 
             .padded-multiline span, .toplink { 
-                background-color: rgba($yourthoughts-color, 0.9) !important; 
+                background-color: darken(rgba($yourthoughts-color, 0.9), 10%) !important; 
             }
          }
     }
@@ -174,4 +183,37 @@
         }
     }
 
+}
+
+// UI Selector
+#selectUI {
+    position: fixed;
+    display: block;
+   
+    background-color: rgba(0,0,0,0.9);
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    padding: 1rem 2rem;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    .ui-button {
+        display: inline-block;
+        color: #FFF;
+        background: #333;
+        padding: 1rem 2rem;
+        margin: 0.5rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+
+        &:hover, &.js-active {
+            background-color: $primary-color;
+        }
+    }
 }
