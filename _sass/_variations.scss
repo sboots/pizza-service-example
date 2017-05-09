@@ -1,0 +1,177 @@
+.mosaic {
+    // Colours
+    $engagement-color   : #F00;
+    $organizing-color   : $primary-color;
+    $talent-color       : $primary-color;
+    $design-color       : $primary-color;
+    $foundations-color  : $primary-color;
+    $yourthoughts-color : $primary-color;
+
+    .heading-container {
+
+        &.cover { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $primary-color !important;
+            border-color: $primary-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($primary-color, 0.9) !important; 
+            }
+        }
+
+        &.section--engagement { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $engagement-color !important;
+            border-color: $engagement-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($engagement-color, 0.9) !important; 
+            }
+        }
+        &.section--organizing { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $organizing-color !important;
+            border-color: $organizing-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($organizing-color, 0.9) !important; 
+            }
+         }
+        &.section--talent { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $talent-color !important;
+            border-color: $talent-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($talent-color, 0.9) !important; 
+            }
+         }
+        &.section--design { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $design-color !important;
+            border-color: $design-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($design-color, 0.9) !important; 
+            } }
+        &.section--foundations { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $foundations-color !important;
+            border-color: $foundations-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($foundations-color, 0.9) !important; 
+            }
+         }
+        
+        &.section--yourthoughts { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $yourthoughts-color !important;
+            border-color: $yourthoughts-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($yourthoughts-color, 0.9) !important; 
+            }
+         }
+    }
+
+    #themenav {
+        .affix {
+
+            .nav-link, li.active {
+                &:hover, &:focus, &:active, .nav-link {
+                    &.section--engagement    { background-color: $engagement-color; }
+                    &.section--organizing    { background-color: $organizing-color; }
+                    &.section--talent        { background-color: $talent-color; }
+                    &.section--design        { background-color: $design-color; }
+                    &.section--foundations   { background-color: $foundations-color; }
+                    &.section--yourthoughts  { background-color: $yourthoughts-color; }
+                }
+            }
+        }
+    }
+
+}
+
+.simple {
+
+    
+    // Colours
+    $engagement-color   : #0F0;
+    $organizing-color   : $primary-color;
+    $talent-color       : $primary-color;
+    $design-color       : $primary-color;
+    $foundations-color  : $primary-color;
+    $yourthoughts-color : $primary-color;
+
+     .heading-container {
+
+        &.cover { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $primary-color !important;
+            border-color: $primary-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($primary-color, 0.9) !important; 
+            }
+        }
+
+        &.section--engagement { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $engagement-color !important;
+            border-color: $engagement-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($engagement-color, 0.9) !important; 
+            }
+        }
+        &.section--organizing { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $organizing-color !important;
+            border-color: $organizing-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($organizing-color, 0.9) !important; 
+            }
+         }
+        &.section--talent { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $talent-color !important;
+            border-color: $talent-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($talent-color, 0.9) !important; 
+            }
+         }
+        &.section--design { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $design-color !important;
+            border-color: $design-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($design-color, 0.9) !important; 
+            } }
+        &.section--foundations { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $foundations-color !important;
+            border-color: $foundations-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($foundations-color, 0.9) !important; 
+            }
+         }
+        
+        &.section--yourthoughts { 
+            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $yourthoughts-color !important;
+            border-color: $yourthoughts-color !important;
+
+            .padded-multiline span, .toplink { 
+                background-color: rgba($yourthoughts-color, 0.9) !important; 
+            }
+         }
+    }
+
+    #themenav {
+        .affix {
+
+            .nav-link, li.active {
+                &:hover, &:focus, &:active, .nav-link {
+                    &.section--engagement    { background-color: $engagement-color; }
+                    &.section--organizing    { background-color: $organizing-color; }
+                    &.section--talent        { background-color: $talent-color; }
+                    &.section--design        { background-color: $design-color; }
+                    &.section--foundations   { background-color: $foundations-color; }
+                    &.section--yourthoughts  { background-color: $yourthoughts-color; }
+                }
+            }
+        }
+    }
+
+}
