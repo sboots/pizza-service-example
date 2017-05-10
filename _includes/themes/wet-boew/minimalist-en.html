@@ -228,16 +228,25 @@
 			$('.opt1').on("click", function(){
 				$('.js-report-section').removeClass('mosaic');
 				$('.js-report-section').removeClass('simple');
+				$('.opt1').addClass('active');
+				$('.opt2').removeClass('active');
+				$('.opt3').removeClass('active');
 			});
 
 			$('.opt2').on("click", function(){
 				$('.js-report-section').addClass('mosaic');
 				$('.js-report-section').removeClass('simple');
+				$('.opt1').removeClass('active');
+				$('.opt2').addClass('active');
+				$('.opt3').removeClass('active');
 			});
 
 			$('.opt3').on("click", function(){
 				$('.js-report-section').removeClass('mosaic');
 				$('.js-report-section').addClass('simple');
+				$('.opt1').removeClass('active');
+				$('.opt2').removeClass('active');
+				$('.opt3').addClass('active');
 			});
 		});
 	</script>
