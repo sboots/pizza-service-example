@@ -1,0 +1,90 @@
+@media screen {
+    .engagement-report {
+
+        // Mini version of the heading container, for use on the summary page.
+        // Shared class with heading-container
+        a.heading-container.mini-heading-container {
+            margin-top  : 0;
+            padding-top : 80px 10px 40px 10px;
+            min-height  : 180px;
+
+            @media screen and (min-width: 768px) { min-height: 200px; }
+
+            @media screen and (min-width: 992px) {
+                min-height: 220px;
+                padding-left: 20px;
+            }
+
+            // Bootstrap lg breakpoint
+            @media screen and (min-width: 1200px) {
+                min-height: 190px;
+                padding-left: 10px;
+            }
+
+            .padded-multiline {
+                bottom      : 10px;
+                font-size   : 20px;
+                font-weight : bold; 
+
+                @media screen and (min-width: 500px) {
+                    font-size   : 24px;
+                    line-height : 1.45;
+                } 
+
+                // Bootstrap md breakpoint
+                @media screen and (min-width: 992px) {
+                    font-size: 28px;
+                    line-height: 1.45;
+                    bottom: 20px;
+                }
+
+                // Bootstrap lg breakpoint
+                @media screen and (min-width: 1200px) {
+                    font-size: 21px;
+                    line-height: 1.4;
+                    bottom: 10px;
+                }
+                
+            }
+
+            &:hover, &:focus { box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.08); }
+        }
+    }
+
+    .summary-heading-background { 
+        background: url("img/v2/horizon-v2.jpg") no-repeat center right / cover $primary-color;
+        border-color: $primary-color;
+        min-height: 200px;  
+    }
+
+    .homepage-feature {
+        font-size: 18px;
+        
+        
+        &.report {
+            background-color    : $primary-color;
+            color               : #fff;
+            
+            .homepage-feature-image {
+                display         : block;
+                margin-top      : 15px;
+                margin-bottom   : 15px;
+                min-height      : 250px;
+                background      : url(img/v2/whiteboard-mosaic-9.png) no-repeat center right / cover $primary-color;
+            }
+        }
+
+        &.signup {
+            background-color    : #286260;
+            color               : #fff;
+            margin-top          : 1em;
+            margin-bottom       : 2em;
+        }
+        
+        .homepage-feature-text { padding: 2em 1.5em; }
+    }
+
+}
+
+
+
