@@ -122,7 +122,7 @@
         }
 
         &.section--engagement { 
-            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($engagement-color, 30%) !important;
+            background: url("img/v2/simple--banner--engagment.png") no-repeat center right / cover lighten($engagement-color, 30%) !important;
             border-color: $engagement-color !important;
             background-blend-mode: multiply;
 
@@ -131,7 +131,7 @@
             }
         }
         &.section--organizing { 
-            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($organizing-color, 30%) !important;
+            background: url("img/v2/simple--banner--organizing.png") no-repeat center right / cover lighten($organizing-color, 30%) !important;
             border-color: $organizing-color !important;
             background-blend-mode: multiply;
 
@@ -140,7 +140,7 @@
             }
          }
         &.section--talent { 
-            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($talent-color, 30%) !important;
+            background: url("img/v2/simple--banner--talent.png") no-repeat center right / cover lighten($talent-color, 30%) !important;
             border-color: $talent-color !important;
             background-blend-mode: multiply;
 
@@ -149,7 +149,7 @@
             }
          }
         &.section--design { 
-            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($design-color, 30%) !important;
+            background: url("img/v2/simple--banner--design.png") no-repeat center right / cover lighten($design-color, 30%) !important;
             border-color: $design-color !important;
             background-blend-mode: multiply;
 
@@ -157,7 +157,7 @@
                 background-color: darken(rgba($design-color, 0.9), 10%) !important; 
             } }
         &.section--foundations { 
-            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($foundations-color, 30%) !important;
+            background: url("img/v2/simple--banner--foundations.png") no-repeat center right / cover lighten($foundations-color, 30%) !important;
             border-color: $foundations-color !important;
             background-blend-mode: multiply;
 
@@ -167,7 +167,7 @@
          }
         
         &.section--yourthoughts { 
-            background: url("img/v2/op3-base.png") no-repeat center right / cover lighten($yourthoughts-color, 30%) !important;
+            background: url("img/v2/simple--banner--yourthoughts.png") no-repeat center right / cover lighten($yourthoughts-color, 30%) !important;
             border-color: $yourthoughts-color !important;
             background-blend-mode: multiply;
 
