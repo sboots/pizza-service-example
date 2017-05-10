@@ -1,8 +1,10 @@
 
 // Easing for test
-* {
+.cover, #themenav, .section-heading-container, .section--engagement, .section--organizing, .section--talent,
+.section--design, .section--foundations, .section--yourthoughts {
     transition: all 0.5s ease;
 }
+
 
 .js-mosaic {
     // Colours
