@@ -222,6 +222,25 @@
 	<!-- With thanks to http://www.budget.gc.ca/2017/js/bootstrap.js -->
 	<script src="{{ ASSET_PATH }}/bootstrap-affix-scrollspy.js"></script>
 
+	<script>
+
+    	$( document ).ready(function() {
+			$('.opt1').on("click", function(){
+				$('.js-report-section').removeClass('mosaic');
+				$('.js-report-section').removeClass('simple');
+			});
+
+			$('.opt2').on("click", function(){
+				$('.js-report-section').addClass('mosaic');
+				$('.js-report-section').removeClass('simple');
+			});
+
+			$('.opt3').on("click", function(){
+				$('.js-report-section').removeClass('mosaic');
+				$('.js-report-section').addClass('simple');
+			});
+		});
+	</script>
 </body>
 
 </html>
