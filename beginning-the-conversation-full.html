@@ -6,6 +6,7 @@ permalink: 'beginning-the-conversation/full-report'
 {% include JB/setup %}
 
 
+
 <div class="engagement-report" id="js-report-section">
 	<!--
 		Front Cover Banner 
@@ -16,6 +17,29 @@ permalink: 'beginning-the-conversation/full-report'
 		Page Navigation 
 	-->
 	{% include pagePartials/en--fullreport--nav.html %}
+
+	<!-- Temp Dialog -->
+	<div class="alert alert-info" role="alert" id="tmp-dialog">
+		<p>Howdy! Thank you for taking the time in evaluating our webpage! Select a page version by using the buttons below or by hovering over the bottom center of the window.</p>
+		<div style="text-align:center;">
+			<button class="ui-button js-active" id="opt1">Option 1: Photos</button>
+			<button class="ui-button" id="opt2">Option 2: Simple</button>
+			<button class="ui-button" id="opt3">Option 3: Mosaic</button>
+		</div>
+		<div class="closebutton"><button id="tmp-dialog--close"><span class="glyphicon glyphicon-remove"></span></button></div>
+	</div>
+
+	<script>
+		var toHide = document.getElementById("tmp-dialog--close");
+		function closeButtonClicked(evt) {
+			document.getElementById("tmp-dialog").classList.add("hidden");
+
+		}
+
+		toHide.addEventListener("click", closeButtonClicked, false);
+
+
+	</script>
 
 	<!-- 
 	======== Report Content ========
@@ -118,48 +142,8 @@ permalink: 'beginning-the-conversation/full-report'
 	</div>
 </div>
 
-<!-- User Testing UI -->
-<div id="selectUI">
-	<small>Please select an option below:</small>
-	<button class="ui-button js-active" id="opt1">Option 1: Photos</button>
-	<button class="ui-button" id="opt2">Option 2: Simple</button>
-	<button class="ui-button" id="opt3">Option 3: Mosaic</button>
-</div>
+	<!--
+		Front Cover Banner 
+	-->
+	{% include pagePartials/tui--overlay.html %}
 
-<script>
-	var opt1 = document.getElementById("opt1");
-	var opt2 = document.getElementById("opt2");
-	var opt3 = document.getElementById("opt3");
-
-	var wrapper = document.getElementById("js-report-section");
-
-	function uiClicked(evt) { 
-		if(evt.target.id == "opt1") {
-			wrapper.classList.remove("mosaic");
-			wrapper.classList.remove("simple");
-			opt1.classList.add("js-active");
-			opt2.classList.remove("js-active");
-			opt3.classList.remove("js-active");
-		}
-		if(evt.target.id == "opt2") {
-			wrapper.classList.remove("mosaic");
-			wrapper.classList.add("simple");
-			opt1.classList.remove("js-active");
-			opt2.classList.add("js-active");
-			opt3.classList.remove("js-active");
-		}
-		if(evt.target.id == "opt3") {
-			wrapper.classList.add("mosaic");
-			wrapper.classList.remove("simple");
-			opt1.classList.remove("js-active");
-			opt2.classList.remove("js-active");
-			opt3.classList.add("js-active");
-		}
-	}
-
-	opt1.addEventListener("click", uiClicked, false);
-	opt2.addEventListener("click", uiClicked, false);
-	opt3.addEventListener("click", uiClicked, false);
-</script>
-
-<!-- END User Testing UI -->
