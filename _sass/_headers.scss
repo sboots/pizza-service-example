@@ -173,7 +173,7 @@
     }
 
     &.section--engagement {
-        @include image-header("img/v2/hub-ottawa.jpg", $primary-color);
+        @include image-header("img/v2/pei-startupzone-v2a.jpg", $primary-color);
 
         .padded-multiline span, .toplink { 
             background-color: rgba($engagement-color, 0.9); 
@@ -181,7 +181,7 @@
     }
 
     &.section--organizing {
-         @include image-header("img/v2/calgary.jpg", $organizing-color);
+         @include image-header("img/v2/calgary-v3.jpg", $organizing-color);
 
         .padded-multiline span, .toplink { 
             background-color: rgba($organizing-color, 0.9); 
@@ -189,7 +189,7 @@
     }
     
     &.section--talent {
-         @include image-header("img/v2/pei-startupzone-v2.jpg", $talent-color);
+         @include image-header("img/v2/hub-ottawa-v2.jpg", $talent-color);
 
         .padded-multiline span, .toplink { 
             background-color: rgba($talent-color, 0.9); 
@@ -197,7 +197,7 @@
     }
     
     &.section--design {
-         @include image-header("img/v2/vancouver-v2.jpg", $design-color);
+         @include image-header("img/v2/vancouver-v2a.jpg", $design-color);
 
         .padded-multiline span, .toplink { 
             background-color: rgba($design-color, 0.9); 
