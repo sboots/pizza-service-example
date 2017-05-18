@@ -35,92 +35,32 @@
     $foundations-color  : #151512;
     $yourthoughts-color : #702c0f;
 
-    .heading-container {
+   .section-heading-container .heading-container {
 
-        &.cover { 
-            background: url("img/v2/horizon-mosaic.png") no-repeat center right / cover $primary-color !important;
-            border-color: $primary-color !important;
+         .padded-multiline {
+            position: absolute;
+            bottom: 0;
+            width: 75%;
+            margin: 0;
+            padding: 1rem;
+            background-color: rgba(29, 52, 75, 0.9);
+            left:0;
+            border-top-right-radius: 2rem;
 
-            .padded-multiline span, .toplink { 
-                background-color: rgba($primary-color, 0.9) !important; 
+            span {
+                background-color: rgba(0,0,0,0) !important;
             }
-        }
 
-        &.section--engagement { 
-            background: url("img/v2/hub-ottawa-mosaic.png") no-repeat center right / cover $engagement-color !important;
-            border-color: $engagement-color !important;
-
-            .padded-multiline span, .toplink { 
-                background-color: rgba($engagement-color, 0.9) !important; 
-            }
-        }
-        &.section--organizing { 
-            background: url("img/v2/calgary-mosaic.png") no-repeat center right / cover $organizing-color !important;
-            border-color: $organizing-color !important;
-
-            .padded-multiline span, .toplink { 
-                background-color: rgba($organizing-color, 0.9) !important; 
+            @media screen and (min-width: 810px) {
+                width:50%;
+                padding: 1.5rem;
             }
          }
-        &.section--talent { 
-            background: url("img/v2/pei-startupzone-mosaic.png") no-repeat center right / cover $talent-color !important;
-            border-color: $talent-color !important;
 
-            .padded-multiline span, .toplink { 
-                background-color: rgba($talent-color, 0.9) !important; 
-            }
-         }
-        &.section--design { 
-            background: url("img/v2/whiteboard-mosaic-9.png") no-repeat center right / cover $design-color !important;
-            border-color: $design-color !important;
-
-            .padded-multiline span, .toplink { 
-                background-color: rgba($design-color, 0.9) !important; 
-            } }
-        &.section--foundations { 
-            background: url("img/v2/gds-mosaic.png") no-repeat center right / cover $foundations-color !important;
-            border-color: $foundations-color !important;
-
-            .padded-multiline span, .toplink { 
-                background-color: rgba($foundations-color, 0.9) !important; 
-            }
-         }
         
-        &.section--yourthoughts { 
-            background: url("img/v2/ottawa-mosaic.png") no-repeat center right / cover $yourthoughts-color !important;
-            border-color: $yourthoughts-color !important;
-
-            .padded-multiline span, .toplink { 
-                background-color: rgba($yourthoughts-color, 0.9) !important; 
-            }
-         }
     }
 
-    #themenav {
-        .affix {
-
-            .nav-link, li.active {
-                &:hover, &:focus, &:active, .nav-link {
-                    &.section--engagement    { background-color: $engagement-color; }
-                    &.section--organizing    { background-color: $organizing-color; }
-                    &.section--talent        { background-color: $talent-color; }
-                    &.section--design        { background-color: $design-color; }
-                    &.section--foundations   { background-color: $foundations-color; }
-                    &.section--yourthoughts  { background-color: $yourthoughts-color; }
-                }
-            }
-        }
-    }
-
-    .comment-panel {
-        &.section--intro         { background-color: $primary-color; }
-        &.section--engagement    { background-color: $engagement-color; }
-        &.section--organizing    { background-color: $organizing-color; }
-        &.section--talent        { background-color: $talent-color; }
-        &.section--design        { background-color: $design-color; }
-        &.section--foundations   { background-color: $foundations-color; }
-        &.section--yourthoughts  { background-color: $yourthoughts-color; }
-    }
+    
 
 }
 .js-simple {
@@ -133,96 +73,31 @@
     $foundations-color  : #800042;
     $yourthoughts-color : #111111;
 
-     .heading-container {
+     .section-heading-container .heading-container {
 
-        &.cover { 
-            background: url("img/v2/op3-cover.png") no-repeat center right / cover $primary-color !important;
+         .padded-multiline {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+            padding: 1rem;
+            background-color: rgba(29, 52, 75, 0.75);
+            left:0;
+            
+            
 
-            .padded-multiline span, .toplink { 
-                background-color: rgba($primary-color, 0.9) !important; 
+            span {
+                background-color: rgba(0,0,0,0) !important;
+                width: 75%;
+                display: block;
+                line-height: 1.45em;
+                text-shadow: 0px 0px 2px rgba(0,0,0,0.9);
             }
-        }
 
-        &.section--engagement { 
-            background: url("img/v2/simple--banner--engagment.png") no-repeat center right / cover lighten($engagement-color, 30%) !important;
-            border-color: $engagement-color !important;
-            background-blend-mode: multiply;
-
-            .padded-multiline span, .toplink { 
-                background-color: darken(rgba($engagement-color, 0.9), 20%) !important; 
-            }
-        }
-        &.section--organizing { 
-            background: url("img/v2/simple--banner--organizing.png") no-repeat center right / cover lighten($organizing-color, 30%) !important;
-            border-color: $organizing-color !important;
-            background-blend-mode: multiply;
-
-            .padded-multiline span, .toplink { 
-                background-color: darken(rgba($organizing-color, 0.9), 10%) !important; 
-            }
+            
          }
-        &.section--talent { 
-            background: url("img/v2/simple--banner--talent.png") no-repeat center right / cover lighten($talent-color, 30%) !important;
-            border-color: $talent-color !important;
-            background-blend-mode: multiply;
 
-            .padded-multiline span, .toplink { 
-                background-color: darken(rgba($talent-color, 0.9), 10%) !important; 
-            }
-         }
-        &.section--design { 
-            background: url("img/v2/simple--banner--design.png") no-repeat center right / cover lighten($design-color, 30%) !important;
-            border-color: $design-color !important;
-            background-blend-mode: multiply;
-
-            .padded-multiline span, .toplink { 
-                background-color: darken(rgba($design-color, 0.9), 10%) !important; 
-            } }
-        &.section--foundations { 
-            background: url("img/v2/simple--banner--foundations.png") no-repeat center right / cover lighten($foundations-color, 30%) !important;
-            border-color: $foundations-color !important;
-            background-blend-mode: multiply;
-
-            .padded-multiline span, .toplink { 
-                background-color: darken(rgba($foundations-color, 0.9), 10%) !important; 
-            }
-         }
         
-        &.section--yourthoughts { 
-            background: url("img/v2/simple--banner--yourthoughts.png") no-repeat center right / cover lighten($yourthoughts-color, 30%) !important;
-            border-color: $yourthoughts-color !important;
-            background-blend-mode: multiply;
-
-            .padded-multiline span, .toplink { 
-                background-color: darken(rgba($yourthoughts-color, 0.9), 10%) !important; 
-            }
-         }
-    }
-
-    #themenav {
-        .affix {
-
-            .nav-link, li.active {
-                &:hover, &:focus, &:active, .nav-link {
-                    &.section--engagement    { background-color: darken($engagement-color, 5%); }
-                    &.section--organizing    { background-color: darken($organizing-color, 5%); }
-                    &.section--talent        { background-color: darken($talent-color, 5%); }
-                    &.section--design        { background-color: darken($design-color, 5%); }
-                    &.section--foundations   { background-color: darken($foundations-color, 5%); }
-                    &.section--yourthoughts  { background-color: darken($yourthoughts-color, 5%); }
-                }
-            }
-        }
-    }
-
-    .comment-panel {
-        &.section--intro         { background-color: darken($primary-color, 5%); }
-        &.section--engagement    { background-color: darken($engagement-color, 5%); }
-        &.section--organizing    { background-color: darken($organizing-color, 5%); }
-        &.section--talent        { background-color: darken($talent-color, 5%); }
-        &.section--design        { background-color: darken($design-color, 5%); }
-        &.section--foundations   { background-color: darken($foundations-color, 5%); }
-        &.section--yourthoughts  { background-color: darken($yourthoughts-color, 5%); }
     }
 
 }
@@ -240,6 +115,7 @@
     transition: opacity 0.5s ease;
     text-align: center;
     padding: 1rem 2rem;
+    width: 90%;
 
     small {
         display:block;
