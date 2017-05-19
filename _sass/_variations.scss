@@ -35,6 +35,38 @@
     $foundations-color  : #151512;
     $yourthoughts-color : #702c0f;
 
+
+    .heading-container-large.cover {
+        padding:0;
+        span {
+                background-color: rgba(0,0,0,0) !important;
+                width: 75%;
+                display: block;
+                text-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+            }
+
+            h1 {
+                background: rgba(#1d344b, 0.9);
+                display: inline-block;
+                width:50%;
+                border-top-right-radius: 1em;
+                padding-left: 2rem;
+                margin-bottom: 0 !important;
+                line-height: 1.2em !important;
+
+            }
+
+            .subtitle {
+                margin-top:0 !important;
+                width:50%;
+                background: rgba(#1d344b, 0.9);
+                border-bottom-right-radius: 1em;
+                padding: 2rem 0 2rem 2rem;
+                line-height: 1.2em !important;
+
+            }
+    }
+
    .section-heading-container .heading-container {
 
          .padded-multiline {
@@ -73,7 +105,30 @@
     $foundations-color  : #800042;
     $yourthoughts-color : #111111;
 
+     .heading-container-large.cover {
+             background: linear-gradient(rgba(#1d344b, 0.75), rgba(#1d344b, 0.75)), url(img/v2/horizon-v2.jpg) no-repeat center right/cover !important;
+             
+             span {
+                background-color: rgba(0,0,0,0) !important;
+                width: 75%;
+                display: block;
+                //line-height: 1.45em;
+                text-shadow: 0px 0px 2px rgba(0,0,0,0.9);
+            }
+
+            h1{
+                line-height: 1.1em;
+            }
+
+            .subtitle {
+                line-height: 1.1 !important;
+            }
+         
+         }
+
      .section-heading-container .heading-container {
+
+        
 
          .padded-multiline {
             position: absolute;
