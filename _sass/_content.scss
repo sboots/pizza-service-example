@@ -13,17 +13,17 @@
 
         // Quotes
         blockquote { font-size: inherit; }
-        
+
         // List base styles
         ul, ol             { margin-bottom: 1em; }
         ul                 { list-style: outside disc; }
-        li + li, 
+        li + li,
         li ul:first-child  { margin-top: 0.75em; }
 
         // Photo Caption
-        .caption { 
-            font-size: 14px; 
-            color: #676767; 
+        .caption {
+            font-size: 14px;
+            color: #676767;
         }
 
         // Paragraphs
@@ -59,41 +59,42 @@
             p {font-size: 16px; margin: 0;}
 
             a {
-                color: #b6cce8; 
+                color: #b6cce8;
 
                 &:visited { color: #d3bde8; }
+              }
 
-                // Section specific comment panels
-                &.section--engagement {
-                    background-color: $primary-color;
-                    border-color: darken($primary-color, 10%);
-                }
-
-                &.section--organizing {
-                    background-color: $primary-color;
-                    border-color: darken($primary-color, 10%);
-                }
-
-                &.section--talent {
-                    background-color: $primary-color;
-                    border-color: darken($primary-color, 10%);
-                }
-
-                &.section--design {
-                    background-color: $primary-color;
-                    border-color: darken($primary-color, 10%);
-                }
-
-                &.section--foundations {
-                    background-color: $primary-color;
-                    border-color: darken($primary-color, 10%);
-                }
-
-                &.section--your-thoughts {
-                    background-color: $primary-color;
-                    border-color: darken($primary-color, 10%);
-                }
+            // Section specific comment panels
+            &.section--engagement {
+                background-color: $engagement-color !important;
+                border-color: darken($engagement-color, 10%);
             }
+
+            &.section--organizing {
+                background-color: $organizing-color !important;
+                border-color: darken($organizing-color, 10%);
+            }
+
+            &.section--talent {
+                background-color: $talent-color !important;
+                border-color: darken($talent-color, 10%);
+            }
+
+            &.section--design {
+                background-color: $design-color !important;
+                border-color: darken($design-color, 10%);
+            }
+
+            &.section--foundations {
+                background-color: $foundations-color !important;
+                border-color: darken($foundations-color, 10%);
+            }
+
+            &.section--your-thoughts {
+                background-color: $yourthoughts-color !important;
+                border-color: darken($primary-color, 10%);
+            }
+
 
         } // END .comment-pannel
 
