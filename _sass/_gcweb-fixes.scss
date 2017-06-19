@@ -20,6 +20,11 @@ a.gc-dwnld-lnk:focus .gc-dwnld .gc-dwnld-txt {
     text-decoration: underline;
 }
 
+// Fix for the overlay "Close" button not displaying a background properly:
+.overlay-def .overlay-close.btn-primary {
+    background-color: #335075;
+}
+
 
 /* Comments from open.canada.ca */
 
