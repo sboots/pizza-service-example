@@ -102,7 +102,7 @@
         top                 : 0;
         left                : 0;
         width               : 100%;
-        z-index             : 9999 !important;
+        z-index             : 1000 !important;  // Previously 9999
         -webkit-box-shadow  : 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
         -moz-box-shadow     : 0px 9px 9px -5px rgba(0, 0, 0, 0.56);
 
