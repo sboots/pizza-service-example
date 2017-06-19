@@ -99,7 +99,7 @@
             box-decoration-break : clone;
             color                : #fff;
             display              : inline;
-            padding              : 0.25em;
+            padding              : 0.25em; // This determines the initial padding
         }
 
         &.title {
@@ -163,11 +163,11 @@
         margin-bottom: 0;
 
         .padded-multiline span, .toplink { 
-            background-color: rgba($primary-color, 0.9); 
+            background-color: $primary-color; //rgba($primary-color, 0.9); 
         }
         
         .padded-multiline span {
-            background-color: rgba($primary-color, 0.9);
+            background-color: $primary-color; //rgba($primary-color, 0.9); 
             margin-bottom: 1rem;
         }
     }
@@ -176,7 +176,7 @@
         @include image-header("img/v2/pei-startupzone-v2a.jpg", $primary-color);
 
         .padded-multiline span, .toplink { 
-            background-color: rgba($engagement-color, 0.9); 
+            background-color: $engagement-color; //rgba($engagement-color, 0.9); 
         }
     }
 
@@ -184,7 +184,7 @@
          @include image-header("img/v2/calgary-v3.jpg", $organizing-color);
 
         .padded-multiline span, .toplink { 
-            background-color: rgba($organizing-color, 0.9); 
+            background-color: $organizing-color; //rgba($organizing-color, 0.9); 
         }
     }
     
@@ -192,7 +192,7 @@
          @include image-header("img/v2/hub-ottawa-v2.jpg", $talent-color);
 
         .padded-multiline span, .toplink { 
-            background-color: rgba($talent-color, 0.9); 
+            background-color: $talent-color; //rgba($talent-color, 0.9); 
         }
     }
     
@@ -200,7 +200,7 @@
          @include image-header("img/v2/vancouver-v2a.jpg", $design-color);
 
         .padded-multiline span, .toplink { 
-            background-color: rgba($design-color, 0.9); 
+            background-color: $design-color; //rgba($design-color, 0.9); 
         }
     }
     
@@ -208,7 +208,7 @@
          @include image-header("img/v2/construction.jpg", $foundations-color);
 
         .padded-multiline span, .toplink { 
-            background-color: rgba($foundations-color, 0.9); 
+            background-color: $foundations-color; //rgba($foundations-color, 0.9); 
         }
     }
     
@@ -216,7 +216,7 @@
          @include image-header("img/v2/ottawa-v2.jpg", $yourthoughts-color);
 
         .padded-multiline span, .toplink { 
-            background-color: rgba($yourthoughts-color, 0.9); 
+            background-color: $yourthoughts-color; //rgba($yourthoughts-color, 0.9); 
         }
     }
 

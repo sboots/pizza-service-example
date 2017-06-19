@@ -5,11 +5,39 @@
     transition: all 0.5s ease;
 }
 
-$engagement-color   : #110b0a;
-$organizing-color   : #332a29;
-$talent-color       : #1d2f21;
-$design-color       : #a1084f;
+// #110b0a
+// #262508
+// #182635
+// #0c3b31
+$engagement-color   : #0c3b31;
+
+// #332a29
+// #2b2a32
+// #2f2e38
+$organizing-color   : #2f2e38;
+
+// #1d2f21
+// #264a47
+// #561d1a
+// #62211d
+$talent-color       : #62211d;
+
+// #a1084f
+// #393d15
+// #262e0a
+// #38430f
+$design-color       : #38430f;
+
+// #151512
+// #0a0905
+// #0e0c07
+// #151512 again!
 $foundations-color  : #151512;
+
+// #702c0f
+// #532809
+// #6e3302
+// #702c0f again!
 $yourthoughts-color : #702c0f;
 
 .report-image-preloader {
