@@ -40,12 +40,15 @@ $yourthoughts-color : #702c0f;
 
         .nav-link, li.active {
             &:hover, &:focus, &:active, .nav-link {
-                &.section--engagement    { background-color: darken($engagement-color, 5%); }
-                &.section--organizing    { background-color: darken($organizing-color, 5%); }
-                &.section--talent        { background-color: darken($talent-color, 5%); }
-                &.section--design        { background-color: darken($design-color, 5%); }
-                &.section--foundations   { background-color: darken($foundations-color, 5%); }
-                &.section--yourthoughts  { background-color: darken($yourthoughts-color, 5%); }
+
+                background-color: $active-nav-background-colour !important;
+
+                // &.section--engagement    { background-color: darken($engagement-color, 5%); }
+                // &.section--organizing    { background-color: darken($organizing-color, 5%); }
+                // &.section--talent        { background-color: darken($talent-color, 5%); }
+                // &.section--design        { background-color: darken($design-color, 5%); }
+                // &.section--foundations   { background-color: darken($foundations-color, 5%); }
+                // &.section--yourthoughts  { background-color: darken($yourthoughts-color, 5%); }
             }
         }
     }

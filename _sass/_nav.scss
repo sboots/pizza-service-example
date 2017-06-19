@@ -66,7 +66,7 @@
 
                 a { display: inline-block; padding: 0 1.54%; }
 
-                &.active a { color: #dedede !important; }
+                &.active a { color: #efefef !important; }
             }
 
             .nav-link {
@@ -108,12 +108,15 @@
 
         .nav-link, li.active {
             &:hover, &:focus, &:active, .nav-link {
-                &.section--engagement    { background-color: $engagement-color; }
-                &.section--organizing    { background-color: $organizing-color; }
-                &.section--talent        { background-color: $talent-color; }
-                &.section--design        { background-color: $design-color; }
-                &.section--foundations   { background-color: $foundations-color; }
-                &.section--yourthoughts  { background-color: $yourthoughts-color; }
+
+                background-color: $active-nav-background-colour;
+
+                // &.section--engagement    { background-color: $engagement-color; }
+                // &.section--organizing    { background-color: $organizing-color; }
+                // &.section--talent        { background-color: $talent-color; }
+                // &.section--design        { background-color: $design-color; }
+                // &.section--foundations   { background-color: $foundations-color; }
+                // &.section--yourthoughts  { background-color: $yourthoughts-color; }
             }
         }
     }
