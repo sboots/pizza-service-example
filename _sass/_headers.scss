@@ -81,7 +81,7 @@
         }
 
         &.padded-multiline {
-            @media screen and (min-width: 992px) { bottom: 40px; line-height: 1.65; }
+            @media screen and (min-width: 992px) { bottom: 40px; line-height: 1.6; }
         }
     }
 
@@ -108,6 +108,7 @@
             font-weight     : bold;
             margin          : 0 0 11.5px;
             position        : static;
+            line-height     : 1.5;
 
             @media screen and (min-width: 500px) { font-size: 38px; }
             @media screen and (min-width: 650px) { font-size: 46px; }
@@ -124,7 +125,7 @@
         &.subtitle {
             font-size     : 20px;
             margin        : 0 0 11.5px;
-            margin-bottom : 1em;
+            margin-bottom : 1.1em;
             line-height   : 1.65;
             position      : static;
 
